@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="A Simple Tic-Tac-Toe Game" />
+    <meta name="keywords" content="HTML,CSS,JavaScript,Tic-Tac-Toe-Game,Game" />
+    <title>Tic-Tac-toe</title>
+    <link
+      rel="icon"
+      href="icon/tic-tac-toe-game-svgrepo-com-hwhite.svg"
+      type="image/svg"
+    />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  </head>
+  <body>
+    <header>
+      <div id="div-header">
+      <h1>Tic-Tac-Toe</h1>
+      <div id="div-header-selector">
+      <h3>Mode:</h3>
+      <select id="mode-selector" class="selector-class"> 
+        <option value="PVP">PlayerVsPlayer</option>
+        <option value="PVM">PlayervsMachine</option>
+      </select>
+      <h3 class="extraselector">Difficult:</h3>
+      <select id="difficult-selector" class="selector-class extraselector"> 
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      </div>
+      </div>
+    </header>
+
+    <table id="game-board">
+      <tbody>
+      <tr>
+        <td id="0">1</td>
+        <td id="1">2</td>
+        <td id="2">3</td>
+      </tr>
+      <tr>
+        <td id="3">4</td>
+        <td id="4">5</td>
+        <td id="5">6</td>
+      </tr>
+      <tr>
+        <td id="6">7</td>
+        <td id="7">8</td>
+        <td id="8">9</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <label>Score:</label>
+      <label>You</label>
+      <label>0</label>
+      <label>Bot</label>
+      <label>0</label>
+    </footer>
+  </body>
+</html>
