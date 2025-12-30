@@ -12,53 +12,62 @@
       type="image/svg"
     />
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="js/screen.js" defer></script>
+    <scirpt src="js/bot/bot.js" defer></scirpt>
+    <script src="js/gamelogic/game.js" defer></script>
   </head>
   <body>
     <header>
       <div id="div-header">
-      <h1>Tic-Tac-Toe</h1>
-      <div id="div-header-selector">
-      <h3>Mode:</h3>
-      <select id="mode-selector" class="selector-class"> 
-        <option value="PVP">PlayerVsPlayer</option>
-        <option value="PVM">PlayervsMachine</option>
-      </select>
-      <h3 class="extraselector">Difficult:</h3>
-      <select id="difficult-selector" class="selector-class extraselector"> 
-        <option value="easy">Easy</option>
-        <option value="medium">Medium</option>
-        <option value="hard">Hard</option>
-      </select>
-      </div>
+        <h1>Tic-Tac-Toe</h1>
+        <div id="div-header-selector">
+          <h3>Mode:</h3>
+          <select id="mode-selector" class="selector-class">
+            <option value="PVP">Player Vs Player</option>
+            <option value="PVM">Player vs Machine</option>
+          </select>
+          <h3 id="h3-difficult" class="extraselector">Difficult:</h3>
+          <select id="difficult-selector" class="selector-class extraselector">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
       </div>
     </header>
-
-    <table id="game-board">
-      <tbody>
-      <tr>
-        <td id="0">1</td>
-        <td id="1">2</td>
-        <td id="2">3</td>
-      </tr>
-      <tr>
-        <td id="3">4</td>
-        <td id="4">5</td>
-        <td id="5">6</td>
-      </tr>
-      <tr>
-        <td id="6">7</td>
-        <td id="7">8</td>
-        <td id="8">9</td>
-      </tr>
-      </tbody>
-    </table>
-
+    <div>
+      <table id="game-board">
+        <tbody>
+          <tr>
+            <td id="0-0"></td>
+            <td id="0-1"></td>
+            <td id="0-2"></td>
+          </tr>
+          <tr>
+            <td id="1-0"></td>
+            <td id="1-1"></td>
+            <td id="1-2"></td>
+          </tr>
+          <tr>
+            <td id="2-0"></td>
+            <td id="2-1"></td>
+            <td id="2-2"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <footer>
-      <label>Score:</label>
-      <label>You</label>
-      <label>0</label>
-      <label>Bot</label>
-      <label>0</label>
+      <div id="footer-div">
+        <div class="score-div">
+          <label class="score-label" id="score_player1">0</label>
+          <label id="description_player1">Player 1</label>
+        </div>
+        <label>Score</label>
+        <div class="score-div">
+          <label class="score-label" id="score_player2">0</label>
+          <label id="description_player2">Player 2</label>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
